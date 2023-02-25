@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import burger1 from "../../assets/burger1.png";
 import burger2 from "../../assets/burger2.png";
 import burger3 from "../../assets/burger3.png";
@@ -46,6 +47,27 @@ const Cart = () => {
           increment={() => increment(3)}
           decrement={() => decrement(3)}
         />
+
+        <article>
+          <div>
+            <h4>Sub Total</h4>
+            <p>₹{2000}</p>
+          </div>
+          <div>
+            <h4>Tax</h4>
+            <p>₹{2000 * 0.18}</p>
+          </div>
+          <div>
+            <h4>Shipping Charges</h4>
+            <p>₹{200}</p>
+          </div>
+          <div>
+            <h4>Total</h4>
+            <p>₹{2000 + 2000 * 0.18 + 200}</p>
+          </div>
+
+          <Link to="/shipping">Checkouts</Link>
+        </article>
       </main>
     </section>
   );
