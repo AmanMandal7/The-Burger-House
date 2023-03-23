@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import aman from "../../assets/aman.png";
 import { Link } from "react-router-dom";
+import { MdDashboard } from "react-icons/md";
 
 const Profile = () => {
   const options = {
@@ -24,7 +25,13 @@ const Profile = () => {
         </motion.h5>
 
         <motion.div {...options} transition={{ dealy: 0.5 }}>
-          <Link to="/admin/dashboard">Dashboard</Link>
+          <Link
+            to="/admin/dashboard"
+            style={{ borderRadius: 0, backgroundColor: "rgb(40,40,40)" }}
+          >
+            <MdDashboard />
+            Dashboard
+          </Link>
         </motion.div>
 
         <motion.div
