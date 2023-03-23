@@ -24,7 +24,7 @@ import './styles/confirmOrder.scss'
 import './styles/paymentSucess.scss'
 import './styles/login.scss'
 import './styles/profile.scss'
-import './styles/myorders.scss'
+import './styles/table.scss'
 
 
 
