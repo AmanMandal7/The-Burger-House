@@ -10,6 +10,7 @@ import PaymentSuccess from './components/cart/PaymentSuccess';
 import Login from './components/login/Login';
 import Profile from './components/profile/Profile';
 import MyOrders from './components/myOrders/MyOrders';
+import OrderDetails from './components/myOrders/OrderDetails';
 
 import './styles/app.scss';
 import './styles/header.scss'
@@ -25,7 +26,7 @@ import './styles/paymentSucess.scss'
 import './styles/login.scss'
 import './styles/profile.scss'
 import './styles/table.scss'
-
+import './styles/orderDetails.scss'
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/profile' element={<Profile />} />
         <Route path='/myorders' element={<MyOrders />} />
+        <Route path='/order/:id' element={<OrderDetails />} />
       </Routes>
 
       <Footer />
