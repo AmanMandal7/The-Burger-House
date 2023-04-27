@@ -72,6 +72,36 @@ const OrderDetails = () => {
             <b>Total Amount</b>₹{2450 + 150 + 133}
           </p>
         </div>
+
+        <article>
+          <h1>Ordered Items</h1>
+
+          <div>
+            <h4>Cheese Burger</h4>
+            <div>
+              <span>{12}</span> x <span>{350}</span>
+            </div>
+          </div>
+
+          <div>
+            <h4>Veg Cheese Burger</h4>
+            <div>
+              <span>{10}</span> x <span>{500}</span>
+            </div>
+          </div>
+
+          <div>
+            <h4>Cheese Burger With French Fries</h4>
+            <div>
+              <span>{6}</span> x <span>{900}</span>
+            </div>
+          </div>
+
+          <div>
+            <h4 style={{ fontWeight: 800 }}>Sub Total</h4>
+            <div style={{ fontWeight: 800 }}>₹{3760}</div>
+          </div>
+        </article>
       </main>
     </section>
   );
