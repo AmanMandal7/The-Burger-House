@@ -18,7 +18,7 @@ const Dashboard = () => {
         <article>
           <Box title="Users" value={123} />
           <Box title="Orders" value={25} />
-          <Box title="Income" value={275000} />
+          <Box title="Income" value={27500} />
         </article>
 
         <section>
@@ -26,6 +26,8 @@ const Dashboard = () => {
             <Link to="/admin/orders">View Orders</Link>
             <Link to="/admin/users">View Users</Link>
           </div>
+
+          <aside></aside>
         </section>
       </main>
     </section>
