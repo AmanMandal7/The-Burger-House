@@ -20,7 +20,7 @@ const About = () => {
             Exploer the various types of fast foods and burgers. Click below to
             see the menu.
           </p>
-          <Link to="">
+          <Link to="/">
             <RiFindReplaceLine />
           </Link>
         </article>
