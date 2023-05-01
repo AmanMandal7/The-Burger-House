@@ -16,7 +16,7 @@ const Founder = () => {
         <p>
           Hey, Everyone I am Sabin Shreshtha, founder of The Burger House.
           <br />
-          Our aim is to serve the best buger at the cheapest price in all over
+          Our aim is to serve the best burger at the cheapest price in all over
           Nepal. Branches in your own city opening soon.
         </p>
       </motion.div>
