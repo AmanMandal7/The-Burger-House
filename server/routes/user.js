@@ -7,4 +7,8 @@ router.get("/googlelogin", passport.authenticate("google", {
     scope: ["profile"],
 }));
 
+router.get("/login", (req, res, next) => {
+    res.send("Logged In");
+})
+
 export default router;
