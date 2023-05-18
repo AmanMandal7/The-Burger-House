@@ -62,56 +62,55 @@ const schema = new mongoose.Schema({
                 required: true,
             },
         },
+    },
 
-        user: {
-            type: mongoose.Schema.ObjectId,
-            ref: "User",
-            required: true,
-        },
+    user: {
+        type: mongoose.Schema.ObjectId,
+        ref: "User",
+        required: true,
+    },
 
-        paymentMethod: {
-            type: "String",
-            enum: ["COD", "Online"],
-            default: "COD",
-        },
+    paymentMethod: {
+        type: "String",
+        enum: ["COD", "Online"],
+        default: "COD",
+    },
 
-        paymentInfo: {
-            type: mongoose.Schema.ObjectId,
-            ref: "Payment",
-        },
+    paymentInfo: {
+        type: mongoose.Schema.ObjectId,
+        ref: "Payment",
+    },
 
-        paidAt: Date,
+    paidAt: Date,
 
-        itemsPrice: {
-            type: Number,
-            default: 0,
-        },
-        taxPrice: {
-            type: Number,
-            default: 0,
-        },
-        shippingCharges: {
-            type: Number,
-            default: 0,
-        },
-        totalAmount: {
-            type: Number,
-            default: 0,
-        },
+    itemsPrice: {
+        type: Number,
+        default: 0,
+    },
+    taxPrice: {
+        type: Number,
+        default: 0,
+    },
+    shippingCharges: {
+        type: Number,
+        default: 0,
+    },
+    totalAmount: {
+        type: Number,
+        default: 0,
+    },
 
-        orderStatus: {
-            type: String,
-            enum: ["Preparing", "Shipped", "Delivered"],
-            default: "Preparing",
-        },
+    orderStatus: {
+        type: String,
+        enum: ["Preparing", "Shipped", "Delivered"],
+        default: "Preparing",
+    },
 
-        deliveredAt: Date,
+    deliveredAt: Date,
 
-        createdAt: {
-            type: Date,
-            default: Date.now,
-        },
-
+    createdAt: {
+        type: Date,
+        default: Date.now,
     },
 
 });
