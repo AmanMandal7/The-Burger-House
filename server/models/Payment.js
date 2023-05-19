@@ -23,4 +23,4 @@ const schema = new mongoose.Schema({
 
 });
 
-export const Payment = mongoose.Model("Payment", schema);
+export const Payment = mongoose.model("Payment", schema);
